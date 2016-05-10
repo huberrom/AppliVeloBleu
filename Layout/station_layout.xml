@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/RL">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:text="Station"
+        android:id="@+id/TV_Station_Resume"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.08"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/TV_Adresse"
+        android:layout_alignEnd="@+id/TV_Adresse"
+        android:gravity="top" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/velo_bleu"
+        android:layout_alignBottom="@+id/TV_Places" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Adresse"
+        android:id="@+id/TV_Adresse"
+        android:layout_below="@+id/TV_Station_Resume"
+        android:layout_toRightOf="@+id/imageView"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/TV_Places"
+        android:layout_toStartOf="@+id/TV_Places" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="10dp"
+        android:text="New Text"
+        android:id="@+id/TV_Dispo"
+        android:gravity="right"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/TV_Station_Resume"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/TV_Station_Resume"
+        android:paddingBottom="-10dp" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:text="New Text"
+        android:id="@+id/TV_Places"
+        android:gravity="right"
+        android:textSize="15dp"
+        android:layout_below="@+id/TV_Dispo"
+        android:layout_alignLeft="@+id/TV_Dispo"
+        android:layout_alignStart="@+id/TV_Dispo" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:text="New Text"
+        android:id="@+id/TV_Distance"
+        android:gravity="right"
+        android:textSize="15dp"
+        android:layout_below="@+id/TV_Places"
+        android:layout_alignLeft="@+id/TV_Places"
+        android:layout_alignStart="@+id/TV_Places" />
+
+</RelativeLayout>
