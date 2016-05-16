@@ -169,5 +169,6 @@ public class MainActivity extends ActionBarActivity implements VeloAdapter.VeloA
         intent.putExtra("lat", item.getLatitude());
         intent.putExtra("long", item.getLongitude());
 
-        startActivity(intent); }
+        startActivity(intent); 
+	}
 }

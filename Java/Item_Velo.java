@@ -231,7 +231,7 @@ public class Item_Velo implements Comparable<Item_Velo>{
         this.velos = velos;
     }
 
-    public void Distance(){
+    public void Distance() {
         if(latitude!=0 && longitude != 0) {
             Location locationA = new Location("point A");
 
